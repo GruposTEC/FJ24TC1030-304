@@ -87,6 +87,16 @@ int main()
     parvada[i]->volar();
    }
 
+    for(int i = 0 ; i < parvada.size() ; i++)
+    {
+        Aguila * ap = dynamic_cast <Aguila *> (parvada[i]);
+        if (ap != 0)
+            cout << i << " Soy una aguila" << endl;
+        Pinguino * ap2 = dynamic_cast <Pinguino *> (parvada[i]);
+        if (ap2 != 0)
+            cout << i << " Soy un pinguino" << endl;
+    }
+
    
 }
 
